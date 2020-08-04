@@ -45,12 +45,12 @@ class Scraper
 
       when social_site.include?("linkedin")
         profile[:linkedin] = social_site
-      when social.include?("github")
-        profile[:github] = social.attributes["href"].value
-      when social.include?("youtube")
-        profile[:youtube] = social.attributes["href"].value
+      when social_site.include?("github")
+        profile[:github] = social_site
+      when social_site.include?("youtube")
+        profile[:youtube] = social_site
       else
-        profile[:blog] = social.attributes["href"].value
+        profile[:blog] = social_site
       end
     end
     profile
