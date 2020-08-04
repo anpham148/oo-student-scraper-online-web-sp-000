@@ -56,6 +56,7 @@ class Scraper
 
     details_info.each do |detail|
       a = detail.css(".description-holder p")
+      binding.pry
     end
     profile
   end
