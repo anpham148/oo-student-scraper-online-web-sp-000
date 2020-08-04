@@ -38,7 +38,7 @@ class Scraper
       # a = social.attributes["class"]
       # binding.pry
       binding.pry
-      social_site = "twitter"
+      social_site = social.attributes["href"]
       case social_site
       when social.include?("twitter")
         profile[:twitter] = social.attributes["href"].value
