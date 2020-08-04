@@ -28,6 +28,8 @@ class Scraper
      html = open(profile_url)
      doc = Nokorgiri::HTML(html)
 
+    vital_info = doc.css(".vitals-container")
+    detail_info = doc.css(".")
   end
 
 end
