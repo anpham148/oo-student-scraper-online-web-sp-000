@@ -12,10 +12,12 @@ class Scraper
     cards = doc.css(".student-card")
 
     cards.each do |info|
-      name = info.css(".student-name")[0].children.text
-      location = info.css(".student-location")[0].children.text
-      profile = info.css("a href")
-
+      s = {
+        :name => info.css(".student-name")[0].children.text
+        :location => info.css(".student-location")[0].children.text
+        :profile_url => info.css("a href")
+      }
+      scrapping << s
     end
 
   end
