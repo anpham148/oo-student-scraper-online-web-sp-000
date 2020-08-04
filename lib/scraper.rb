@@ -35,6 +35,7 @@ class Scraper
     profile = {}
 
     social_info.each do |social|
+      if social.includes?("twitter")
     end
   end
 
