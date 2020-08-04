@@ -12,9 +12,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    @@all.name
-    binding.pry
-    students_array[:name]
+    @@all.name = students_array[:name]
   end
 
   def add_student_attributes(attributes_hash)
