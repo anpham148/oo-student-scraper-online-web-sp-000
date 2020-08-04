@@ -19,11 +19,9 @@ class Scraper
         :location => info.css(".student-location")[0].children.text,
         :profile_url => info.css("a")[0].attributes["href"].value
       }
-
-
-      # scrapping << s
+       scrapping << s
     end
-  #  scrapping
+     scrapping
   end
 
   def self.scrape_profile_page(profile_url)
