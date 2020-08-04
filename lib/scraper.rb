@@ -29,7 +29,7 @@ class Scraper
      doc = Nokorgiri::HTML(html)
 
     vital_info = doc.css(".vitals-container")
-    detail_info = doc.css(".")
+    detail_info = doc.css(".details-container")
   end
 
 end
