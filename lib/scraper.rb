@@ -56,7 +56,6 @@ class Scraper
 
     details_info.each do |detail|
       profile[:bio] = detail.css(".description-holder p").text
-
     end
     profile
   end
