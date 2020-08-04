@@ -41,6 +41,7 @@ class Scraper
       case social_site
       when social.include?("twitter")
         profile[:twitter] = social.attributes["href"].value
+        binding.pry
       when social.include?("linkedin")
         profile[:linkedin] = social.attributes["href"].value
       when social.include?("github")
@@ -52,7 +53,7 @@ class Scraper
       end
     end
     profile
-    binding.pry
+
   end
 
 end
