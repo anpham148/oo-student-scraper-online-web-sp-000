@@ -22,6 +22,8 @@ class Student
     # add_attributes = attributes_hash.each do |attr|
     #
     # end
+    attributes_hash[:twitter] = twitter 
+    attributes[:]
   end
 
   def self.all
