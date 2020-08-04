@@ -13,6 +13,7 @@ class Scraper
     name = info.css(".student-name")[0].children.text,
     location = info.css(".student-location")[0].children.text,
     profile_url = info.css("a href")
+    binding.pry
 
     cards.each do |info|
 
