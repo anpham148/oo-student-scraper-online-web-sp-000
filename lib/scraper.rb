@@ -18,9 +18,9 @@ class Scraper
         :profile_url => info.css("a href")
         binding.pry
       }
-      scrapping << s
+      # scrapping << s
     end
-   scrapping
+  #  scrapping
   end
 
   def self.scrape_profile_page(profile_url)
