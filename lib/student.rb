@@ -9,11 +9,12 @@ class Student
     @name = student_hash[:name]
     @location = student_hash[:location]
     @@all << self
-  
+
   end
 
   def self.create_from_collection(students_array)
-    @@all.
+    @@all.each do |student|
+    end
     name = students_array[:name]
   end
 
