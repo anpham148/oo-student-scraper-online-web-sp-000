@@ -13,8 +13,8 @@ class Scraper
 
     cards.each do |info|
       s = {
-        :name => info.css(".student-name")[0].children.text
-        :location => info.css(".student-location")[0].children.text
+        :name => info.css(".student-name")[0].children.text,
+        :location => info.css(".student-location")[0].children.text,
         :profile_url => info.css("a href")
       }
       scrapping << s
