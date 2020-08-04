@@ -49,6 +49,9 @@ class Scraper
         profile[:blog] = social_site
       end
     end
+
+    vital_info.each do |vital|
+    end
     profile
   end
 
