@@ -54,6 +54,7 @@ class Scraper
        profile[:profile_quote] =  vital.css(".profile-quote").text
     end
     profile
+    binding.pry
   end
 
 end
