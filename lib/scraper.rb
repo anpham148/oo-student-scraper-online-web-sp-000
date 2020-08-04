@@ -39,6 +39,12 @@ class Scraper
         profile[:twitter] = social.attributes["href"].value
       elsif social.includes?("linkedin")
         profile[:linkedin] = social.attributes["href"].value
+      elsif social.includes?("github")
+        profile[:github] = social.attributes["href"].value
+      elsif social.includes?("youtube")
+        profile[:youtube] = social.attributes["href"].value
+      else
+        profile[:blog] = social.attributes["href"].value
       end
     end
   end
