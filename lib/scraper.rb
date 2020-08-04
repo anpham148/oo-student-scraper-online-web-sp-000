@@ -41,7 +41,7 @@ class Scraper
       social_site = social.attributes["href"].value
 
       if social_site.include?("twitter")
-        profile[:twitter] = social.attributes["href"].value
+        profile[:twitter] = social_site
 
       when social.include?("linkedin")
         profile[:linkedin] = social.attributes["href"].value
