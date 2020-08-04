@@ -29,8 +29,8 @@ class Scraper
      doc = Nokogiri::HTML(html)
 
     social_info = doc.css(".social-icon-container a")
-    vital_info = doc.css(".vitals-text-container")
-    detail_info = doc.css(".details-container")
+    vitals_info = doc.css(".vitals-text-container")
+    details_info = doc.css(".details-container")
 
     profile = {}
 
@@ -50,11 +50,12 @@ class Scraper
       end
     end
 
-    vital_info.each do |vital|
+    vitals_info.each do |vital|
        profile[:profile_quote] =  vital.css(".profile-quote").text
     end
+
+    details
     profile
-    binding.pry
   end
 
 end
