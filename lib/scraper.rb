@@ -37,11 +37,12 @@ class Scraper
     social_info.each do |social|
       # a = social.attributes["class"]
       # binding.pry
+      binding.pry
       social_site = "twitter"
       case social_site
       when social.include?("twitter")
         profile[:twitter] = social.attributes["href"].value
-        binding.pry
+
       when social.include?("linkedin")
         profile[:linkedin] = social.attributes["href"].value
       when social.include?("github")
