@@ -37,18 +37,18 @@ class Scraper
     social_info.each do |social|
       social.attributes["href"].value
       binding.pry
-      if social.include?("twitter")
-        profile[:twitter] = social.attributes["href"].value
-
-      elsif social.include?("linkedin")
-        profile[:linkedin] = social.attributes["href"].value
-      elsif social.include?("github")
-        profile[:github] = social.attributes["href"].value
-      elsif social.include?("youtube")
-        profile[:youtube] = social.attributes["href"].value
-      else
-        profile[:blog] = social.attributes["href"].value
-      end
+      # if social.include?("twitter")
+      #   profile[:twitter] = social.attributes["href"].value
+      #
+      # elsif social.include?("linkedin")
+      #   profile[:linkedin] = social.attributes["href"].value
+      # elsif social.include?("github")
+      #   profile[:github] = social.attributes["href"].value
+      # elsif social.include?("youtube")
+      #   profile[:youtube] = social.attributes["href"].value
+      # else
+      #   profile[:blog] = social.attributes["href"].value
+      # end
     end
   end
 
