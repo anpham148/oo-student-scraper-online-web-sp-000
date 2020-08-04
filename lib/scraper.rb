@@ -43,11 +43,11 @@ class Scraper
       if social_site.include?("twitter")
         profile[:twitter] = social_site
 
-      when social_site.include?("linkedin")
+      elsif social_site.include?("linkedin")
         profile[:linkedin] = social_site
-      when social_site.include?("github")
+      elsif social_site.include?("github")
         profile[:github] = social_site
-      when social_site.include?("youtube")
+      elsif social_site.include?("youtube")
         profile[:youtube] = social_site
       else
         profile[:blog] = social_site
