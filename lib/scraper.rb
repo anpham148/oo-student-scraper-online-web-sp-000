@@ -51,7 +51,7 @@ class Scraper
     end
 
     vital_info.each do |vital|
-       profile[:quote] =  vital.css(".profile-quote").text
+       profile[:profile_quote] =  vital.css(".profile-quote").text
     end
     profile
   end
