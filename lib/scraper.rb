@@ -35,7 +35,7 @@ class Scraper
     profile = {}
 
     social_info.each do |social|
-      a = social.attributes["href"]
+      a = social.attributes["class"]
       binding.pry
       # if social.include?("twitter")
       #   profile[:twitter] = social.attributes["href"].value
