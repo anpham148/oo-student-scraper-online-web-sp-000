@@ -16,6 +16,7 @@ class Student
     @@all.each do |student|
       student.name = students_array[:name]
     end
+    end
 
   end
 
