@@ -49,6 +49,7 @@ class Scraper
         profile[:blog] = social.attributes["href"].value
       end
     end
+    profile
   end
 
 end
