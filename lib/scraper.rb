@@ -51,6 +51,7 @@ class Scraper
     end
 
     vital_info.each do |vital|
+      vital.css("profile-quote")
     end
     profile
   end
