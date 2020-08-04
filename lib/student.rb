@@ -13,9 +13,9 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    @@all.each do |student|
-      student.name = students_array[:name]
-    end
+    # # @@all.each do |student|
+    # #   student.name = students_array[:name]
+    # end
 
 
   end
