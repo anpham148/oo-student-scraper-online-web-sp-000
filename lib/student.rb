@@ -17,7 +17,7 @@ class Student
       student.name = students_array[:name]
       binding.pry
     end
-    end
+  
 
   end
 
