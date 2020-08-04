@@ -19,7 +19,7 @@ class Scraper
       }
       scrapping << s
     end
-
+   scrapping
   end
 
   def self.scrape_profile_page(profile_url)
