@@ -33,6 +33,9 @@ class Scraper
     detail_info = doc.css(".details-container")
 
     profile = {}
+
+    social_info.each do |social|
+    end
   end
 
 end
