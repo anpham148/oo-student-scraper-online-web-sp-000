@@ -18,7 +18,7 @@ class Student
        new_student.name = student[:name]
        new_student.location = student[:location]
     end
-
+  new_student
 
   end
 
