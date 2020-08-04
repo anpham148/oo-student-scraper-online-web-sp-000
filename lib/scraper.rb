@@ -43,7 +43,7 @@ class Scraper
         profile[:twitter] = social.attributes["href"].value
       when social.include?("linkedin")
         profile[:linkedin] = social.attributes["href"].value
-      elsif social.include?("github")
+      when social.include?("github")
         profile[:github] = social.attributes["href"].value
       elsif social.include?("youtube")
         profile[:youtube] = social.attributes["href"].value
