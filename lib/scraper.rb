@@ -28,7 +28,7 @@ class Scraper
      html = open(profile_url)
      doc = Nokogiri::HTML(html)
 
-    social_info = doc.css(".social-icon-container")
+    social_info = doc.css(".social-icon-container a")
     vital_info = doc.css(".vitals-container")
     detail_info = doc.css(".details-container")
 
