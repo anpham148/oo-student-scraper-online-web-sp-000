@@ -58,6 +58,7 @@ class Scraper
       profile[:bio] = detail.css(".description-holder p").text
     end
     profile
+    binding.pry
   end
 
 end
