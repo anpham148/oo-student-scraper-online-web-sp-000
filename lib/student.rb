@@ -14,8 +14,9 @@ class Student
 
   def self.create_from_collection(students_array)
     @@all.each do |student|
+      student.name = students_array[:name]
     end
-    name = students_array[:name]
+
   end
 
   def add_student_attributes(attributes_hash)
