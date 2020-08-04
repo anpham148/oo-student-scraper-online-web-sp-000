@@ -51,7 +51,6 @@ class Scraper
       else
         profile[:blog] = social_site
       end
-
     end
     profile
   end
