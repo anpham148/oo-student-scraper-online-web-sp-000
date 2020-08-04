@@ -10,14 +10,12 @@ class Scraper
 
     scrapping = []
     cards = doc.css(".student-card")
+    name = info.css(".student-name")[0].children.text,
+    location = info.css(".student-location")[0].children.text,
+    profile_url = info.css("a href")
 
     cards.each do |info|
-      s = {
-        :name => info.css(".student-name")[0].children.text,
-        :location => info.css(".student-location")[0].children.text,
-        :profile_url => info.css("a href")
-        binding.pry
-      }
+
       # scrapping << s
     end
   #  scrapping
