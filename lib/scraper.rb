@@ -42,7 +42,6 @@ class Scraper
 
       if social_site.include?("twitter")
         profile[:twitter] = social_site
-
       elsif social_site.include?("linkedin")
         profile[:linkedin] = social_site
       elsif social_site.include?("github")
