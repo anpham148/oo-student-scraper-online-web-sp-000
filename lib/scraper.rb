@@ -41,7 +41,7 @@ class Scraper
       case social_site
       when social.include?("twitter")
         profile[:twitter] = social.attributes["href"].value
-      elsif social.include?("linkedin")
+      when social.include?("linkedin")
         profile[:linkedin] = social.attributes["href"].value
       elsif social.include?("github")
         profile[:github] = social.attributes["href"].value
